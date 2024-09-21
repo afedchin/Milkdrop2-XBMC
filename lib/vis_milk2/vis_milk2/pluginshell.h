@@ -232,7 +232,7 @@ public:
     // called by vis.cpp, on behalf of Winamp:
     int  PluginPreInitialize(HWND hWinampWnd, HINSTANCE hWinampInstance);    
     //int  PluginInitialize();                                                
-	int CPluginShell::PluginInitialize( ID3D11DeviceContext* context, int iPosX, int iPosY, int iWidth, int iHeight, float pixelRatio );
+    int PluginInitialize( ID3D11DeviceContext* context, int iPosX, int iPosY, int iWidth, int iHeight, float pixelRatio );
     int  PluginRender(unsigned char *pWaveL, unsigned char *pWaveR);
     void PluginQuit();
 
