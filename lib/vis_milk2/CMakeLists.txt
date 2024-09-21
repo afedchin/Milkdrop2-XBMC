@@ -65,4 +65,7 @@ if(CORE_SYSTEM_NAME STREQUAL windowsstore)
 else()
   add_definitions(-D_WIN32_WINNT=0x0600 -D_WINDOWS)
 endif()
+
+add_compile_options($<$<COMPILE_LANGUAGE:CXX>:/permissive>)
+
 add_library(vis_milk2 STATIC ${SOURCES} ${SHADER_INCLUDES})
